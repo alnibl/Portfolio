@@ -1,5 +1,5 @@
 # Привет! Я Александр
-**Computer vision ingineer и data scientist.**
+**Computer vision engineer и data scientist.**
 
 ## Мои проекты
 ### Система подсчета трафика

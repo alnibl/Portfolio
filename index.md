@@ -12,4 +12,4 @@
 - **Видео_1**: Детекция, трекинг, подсчет по линиям пересечения:
 - [![Видео_1](https://img.youtube.com/vi/ihf8mkgydJA/0.jpg)](https://youtu.be/ihf8mkgydJA)
 - **Видео_2**: Детекция, классификация, трекинг:
-- [![Видео_1](https://img.youtube.com/vi/ihf8mkgydJA/0.jpg)](https://youtu.be/ihf8mkgydJA)
+- [![Видео_1](https://img.youtube.com/vi/_UefbwsBRs0/0.jpg)](https://youtu.be/_UefbwsBRs0)

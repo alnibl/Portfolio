@@ -35,3 +35,4 @@
 ## Контакты
 - Email: [alnibl88@gmail.com](mailto:alnibl88@gmail.com)
 - GitHub: [Александр Блищ](https://github.com/alnibl)
+- Telegram: @Alnibl

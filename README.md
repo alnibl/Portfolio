@@ -1,5 +1,7 @@
 # Привет! Я Александр
 **Computer vision engineer и data scientist.**
+- Добро пожаловать в моё портфолио! Здесь вы можете найти информацию о моих проектах, демонстрации и описания.
+- [Посетить сайт портфолио](https://alnibl.github.io/Portfolio/)
 
 ## Мои проекты
 ### Система подсчета трафика
@@ -36,3 +38,4 @@
 - Email: [alnibl88@gmail.com](mailto:alnibl88@gmail.com)
 - GitHub: [alnibl](https://github.com/alnibl)
 - Telegram: @Alnibl
+- **Сайт портфолио:** [https://alnibl.github.io/Portfolio/](https://alnibl.github.io/Portfolio/)

@@ -30,7 +30,7 @@
 3. Синхронизация мимики с аудио
 4. Использование предобученных моделей и кастомизация.
 - **Видео**:
-- [![Видео](https://img.youtube.com/vi/CmFFlm8BUKo/0.jpg)](https://youtu.be/CmFFlm8BUKo)
+[![Видео](https://img.youtube.com/vi/CmFFlm8BUKo/0.jpg)](https://youtu.be/CmFFlm8BUKo)
 ## Контакты
 - Email: [alnibl88@gmail.com](mailto:alnibl88@gmail.com)
 - GitHub: [Александр Блищ](https://github.com/alnibl)

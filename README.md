@@ -2,6 +2,7 @@
 **Computer vision engineer и data scientist.**
 - Добро пожаловать в моё портфолио! Здесь вы можете найти информацию о моих проектах, демонстрации и описания.
 - [Посетить сайт портфолио](https://alnibl.github.io/Portfolio/)
+- [Смотреть видеовизитку](https://youtube.com/shorts/EuhiwnNi8RY)
 
 ## Мои проекты
 ### Система подсчета трафика

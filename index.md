@@ -13,3 +13,11 @@
 - [![Видео_1](https://img.youtube.com/vi/ihf8mkgydJA/0.jpg)](https://youtu.be/ihf8mkgydJA)
 - **Видео_2**: Добавлена классификация типов транспорта по линиям пересечения(тип авто отображается рядом со счетчиком):
 - [![Видео_1](https://img.youtube.com/vi/_UefbwsBRs0/0.jpg)](https://youtu.be/_UefbwsBRs0)
+- ### Сервис OCR
+- Описание: Извлечение информации из изображений книг, обрабатывает до 3000 запросов в день.
+- Технологии: OCR, LLM, FastAPI, Python.
+- Видео: [Смотреть](https://ссылка-на-видео).
+
+## Контакты
+- Email: [alnibl88@gmail.com](mailto:alnibl88@gmail.com)
+- GitHub: [Ваш профиль](https://github.com/username)

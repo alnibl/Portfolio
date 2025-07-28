@@ -14,9 +14,8 @@
 3. Дополнительный эксперимент выявил ограничения текущего метода при коротких выбросах.
 - **Использованные технологии**: Python, OpenCV, Aravis, Pandas, NumPy.
 - **Изображения / Графики**:
-#![Описание изображения](MyCollages.jpg)
 <p align="center">
-  <img src="MyCollages.jpg" width="600">
+  <img src="MyCollages.jpg" width="500">
 </p>
 
 

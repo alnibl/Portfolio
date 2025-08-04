@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Портфолио | Александр</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f9f9f9;
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 2rem;
+      line-height: 1.6;
+      color: #333;
+    }
+    h1, h2 {
+      color: #222;
+    }
+    a {
+      color: #0066cc;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .project {
+      margin-bottom: 3rem;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 1.5rem;
+    }
+    img, video {
+      max-width: 100%;
+      border-radius: 6px;
+      margin-top: 1rem;
+    }
+    .video-thumb {
+      width: 360px;
+      margin-top: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <h1>Привет! Я Александр</h1>
+  <p><strong>Computer Vision Engineer и Data Scientist</strong></p>
+  <p>
+    Добро пожаловать в моё портфолио! Здесь вы можете найти информацию о моих проектах, демонстрации и описания.<br>
+    <a href="https://alnibl.github.io/Portfolio/">Сайт портфолио</a> |
+    <a href="https://youtube.com/shorts/EuhiwnNi8RY">Видеовизитка</a>
+  </p>
+
+  <h2>Мои проекты</h2>
+
+  <div class="project">
+    <h3>Автоматизация контроля ядер подсолнечника методом компьютерного зрения</h3>
+    <p>
+      Проект по автоматизации контроля содержания ядер подсолнечника в шелухе на производстве.
+      Использованы классические методы CV. Выявлена высокая корреляция (до 0.98), но перепроверка показала ограничения метода.
+    </p>
+    <ul>
+      <li>Сбор и анализ данных с GigE Vision камер</li>
+      <li>Бинаризация и фильтрация</li>
+      <li>Ограничения метода при кратковременных выбросах</li>
+    </ul>
+    <p><strong>Технологии:</strong> Python, OpenCV, Aravis, Pandas, NumPy</p>
+    <img src="img_1.jpg" alt="Автоматизация ядер">
+  </div>
+
+  <div class="project">
+    <h3>Система подсчета трафика</h3>
+    <p>
+      Реализация системы подсчета транспорта по полосам движения с использованием YOLO и Raspberry Pi.
+    </p>
+    <ul>
+      <li>Трекинг и классификация в реальном времени</li>
+      <li>База данных результатов</li>
+      <li>Работает на маломощных устройствах</li>
+    </ul>
+    <p><strong>Технологии:</strong> YOLO, Raspberry Pi, OpenCV, Python</p>
+    <a href="https://youtu.be/ihf8mkgydJA">
+      <img class="video-thumb" src="https://img.youtube.com/vi/ihf8mkgydJA/0.jpg" alt="Видео 1">
+    </a>
+    <a href="https://youtu.be/_UefbwsBRs0">
+      <img class="video-thumb" src="https://img.youtube.com/vi/_UefbwsBRs0/0.jpg" alt="Видео 2">
+    </a>
+  </div>
+
+  <div class="project">
+    <h3>Сервис OCR + LLM для изображений книг</h3>
+    <p>
+      Система обработки изображений книг с извлечением ключевой информации.
+      Обработка до 3000 запросов в день.
+    </p>
+    <ul>
+      <li>LLM для анализа текста</li>
+      <li>REST API</li>
+      <li>Высокая нагрузка</li>
+    </ul>
+    <p><strong>Технологии:</strong> OCR, LLM, FastAPI, Python</p>
+    <a href="https://youtu.be/1zbjwgsuA-Y">
+      <img class="video-thumb" src="https://img.youtube.com/vi/1zbjwgsuA-Y/0.jpg" alt="OCR LLM видео">
+    </a>
+  </div>
+
+  <div class="project">
+    <h3>Lipsync и реставрация лиц с GAN</h3>
+    <p>
+      Реставрация видео и синхронизация мимики с аудио с помощью Wav2Lip и GAN. Работа для продакшен проекта.
+    </p>
+    <ul>
+      <li>Детекция и идентификация лиц</li>
+      <li>Устранение артефактов</li>
+      <li>Синхронизация с аудио</li>
+    </ul>
+    <p><strong>Технологии:</strong> Python, Wav2Lip, YOLOv5, tortoise-TTS, GFPGAN, GAN, VideoReTalking, Roop</p>
+    <a href="https://youtu.be/CmFFlm8BUKo">
+      <img class="video-thumb" src="https://img.youtube.com/vi/CmFFlm8BUKo/0.jpg" alt="GAN видео">
+    </a>
+  </div>
+
+  <h2>Контакты</h2>
+  <p>
+    <strong>Email:</strong> <a href="mailto:alnibl88@gmail.com">alnibl88@gmail.com</a><br>
+    <strong>GitHub:</strong> <a href="https://github.com/alnibl">alnibl</a><br>
+    <strong>Telegram:</strong> @Alnibl<br>
+    <strong>Сайт:</strong> <a href="https://alnibl.github.io/Portfolio/">https://alnibl.github.io/Portfolio/</a>
+  </p>
+</body>
+</html>

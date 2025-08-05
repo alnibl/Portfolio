@@ -53,108 +53,6 @@
 
   <h2>Мои проекты</h2>
 
-  <!DOCTYPE html>
-<html lang="ru">
-<head>
-  <meta charset="UTF-8">
-  <title>Портфолио | Александр</title>
-  <style>
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #121212;
-      color: #e0e0e0;
-      max-width: 960px;
-      margin: 0 auto;
-      padding: 2rem;
-      line-height: 1.6;
-    }
-    h1, h2, h3 {
-      color: #ffffff;
-    }
-    a {
-      color: #90caf9;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-    .project {
-      margin-bottom: 3rem;
-      border-bottom: 1px solid #333;
-      padding-bottom: 1.5rem;
-    }
-    img, video {
-      border-radius: 6px;
-      margin-top: 1rem;
-    }
-    img.resized {
-      width: 70%;
-      max-width: 70%;
-    }
-    .video-thumb {
-      width: 360px;
-      margin-top: 1rem;
-    }
-    code {
-      display: block;
-      background: #1e1e1e;
-      color: #c5c5c5;
-      padding: 1rem;
-      margin: 1rem 0;
-      overflow-x: auto;
-    }
-  </style>
-</head>
-<body>
-  <h1>Привет! Я Александр</h1>
-  <p><strong>Computer Vision Engineer и Data Scientist</strong></p>
-  <p>
-    Добро пожаловать в моё портфолио! Здесь вы можете найти информацию о моих проектах, демонстрации и описания.<br>
-    <a href="https://alnibl.github.io/Portfolio/">Сайт портфолио</a> |
-    <a href="https://youtube.com/shorts/EuhiwnNi8RY">Видеовизитка</a>
-  </p>
-  <p><a href="https://github.com/alnibl">GitHub</a></p>
-
-  <h2>Мои проекты</h2>
-
-  <div class="project">
-    <h3>DataMind: Сервис обработки бухгалтерских документов</h3>
-    <p><strong>Описание:</strong> Пилотная версия серверной части системы "DataMind" для анализа PDF-документов (договоров, актов, счетов, счет-фактур и т.д.) с использованием OCR и LLM. Система извлекает номер, дату, реквизиты, контрагентов и классифицирует документ, обеспечивая REST API и удобный HTML-интерфейс.</p>
-    <ul>
-      <li>Развёртывание серверной части на базе Ubuntu + Docker + FastAPI</li>
-      <li>Интеграция и настройка OCR-сервисов (EasyOCR + Tesseract) с GPU-поддержкой</li>
-      <li>Подключение локальных LLM (Qwen3-4B, DeepSeek-v3) через Ollama</li>
-      <li>Разработка скриптов для классификации и извлечения атрибутов</li>
-      <li>Реализация API для загрузки и анализа документов</li>
-      <li>Тестирование и оптимизация производительности</li>
-    </ul>
-    <p><strong>Технологии:</strong> Python 3.12, FastAPI, Docker, EasyOCR, Tesseract, Ollama, Qwen3, DeepSeek, Gunicorn, Nginx, Poetry, OpenCV</p>
-    <p><strong>Примеры API:</strong></p>
-    <code>
-# Массовая загрузка документов:
-curl -X POST http://x.x.x.x/api/upload \
- -F "files=@/путь/Акт.pdf" \
- -F "files=@/путь/Договор.pdf"
-
-# Получение результата:
-GET http://x.x.x.x/api/result/{pdf_id}
-
-# Скачивание JSON:
-GET http://x.x.x.x/download/{pdf_id}.json
-    </code>
-    <p><strong>Результаты:</strong></p>
-    <ul>
-      <li>Точность классификации: <strong>97.5%</strong></li>
-      <li>Извлечение номера/даты: <strong>~90%</strong></li>
-      <li>Поддержка до <strong>10 документов одновременно</strong>, обработка: <strong>30–50 сек.</strong></li>
-      <li>Проект развёрнут и доступен по тестовой ссылке</li>
-    </ul>
-  </div>
-
-
-
-  
-
   <div class="project">
     <h3>Автоматизация контроля ядер подсолнечника методом компьютерного зрения</h3>
     <p>
@@ -232,3 +130,4 @@ GET http://x.x.x.x/download/{pdf_id}.json
     <strong>Сайт портфолио:</strong> <a href="https://alnibl.github.io/Portfolio/ ">https://alnibl.github.io/Portfolio/ </a>
   </p>
 </body>
+</html>

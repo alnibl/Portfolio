@@ -40,6 +40,12 @@
       width: 360px;
       margin-top: 1rem;
     }
+    code {
+      background-color: #1e1e1e;
+      padding: 0.3rem 0.6rem;
+      border-radius: 4px;
+      font-family: monospace;
+    }
   </style>
 </head>
 <body>
@@ -48,86 +54,93 @@
   <p>
     Добро пожаловать в моё портфолио! Здесь вы можете найти информацию о моих проектах, демонстрации и описания.<br>
     <a href="https://alnibl.github.io/Portfolio/">Сайт портфолио</a> |
-    <a href="https://youtube.com/shorts/EuhiwnNi8RY">Видеовизитка</a>
+    <a href="https://youtube.com/shorts/EuhiwnNi8RY">Видеовизитка</a> |
+    <a href="https://github.com/alnibl">GitHub</a>
   </p>
 
   <h2>Мои проекты</h2>
 
   <div class="project">
-    <h3>Автоматизация контроля ядер подсолнечника методом компьютерного зрения</h3>
-    <p>
-      Проект направлен на автоматизацию контроля содержания ядер подсолнечника в шелухе на производстве. Использованы классические методы компьютерного зрения (бинаризация и фильтрация).
-      Изначально выявлена высокая корреляция (до 0.98) процента белых пикселей с лабораторными измерениями содержания ядер,
-      однако дополнительная перепроверка командой заказчика на кратковременных выбросах показала ограниченность подхода и необходимость дальнейших исследований с применением моделей глубокого обучения.
-    </p>
+    <h3>DataMind: Сервис обработки бухгалтерских документов</h3>
+    <p>Пилотная серверная система для анализа PDF-документов с использованием OCR и LLM.</p>
     <ul>
-      <li>Сбор и анализ данных с промышленных GigE Vision камер.</li>
-      <li>Подтверждение корреляции между лабораторными замерами и процентом белых пикселей в ряде случаев.</li>
-      <li>Дополнительный эксперимент выявил ограничения текущего метода при коротких выбросах.</li>
+      <li>Развёртывание Ubuntu + Docker + FastAPI</li>
+      <li>Интеграция EasyOCR, Tesseract, LLM (Qwen3, DeepSeek)</li>
+      <li>API загрузки и анализа документов</li>
+      <li>Точность классификации: 97.5%, Извлечение номера/даты: ~90%</li>
+      <li>Обработка до 10 документов одновременно за 30–50 сек</li>
+    </ul>
+    <p><strong>Технологии:</strong> Python 3.12, Docker, FastAPI, EasyOCR, Tesseract, Ollama, Qwen, DeepSeek, Gunicorn, Nginx, Poetry, OpenCV</p>
+    <p><strong>Пример API:</strong></p>
+    <pre><code>curl -X POST http://x.x.x.x/api/upload \
+  -F "files=@/path/Акт.pdf" \
+  -F "files=@/path/Договор.pdf"
+
+GET http://x.x.x.x/api/result/{pdf_id}
+GET http://x.x.x.x/download/{pdf_id}.json</code></pre>
+  </div>
+
+  <div class="project">
+    <h3>Автоматизация контроля ядер подсолнечника</h3>
+    <p>Анализ изображения шелухи с помощью классического CV для выявления содержания ядер.</p>
+    <ul>
+      <li>Обнаружена корреляция с лабораторными измерениями до 0.98</li>
+      <li>Использованы GigE Vision камеры и OpenCV</li>
+      <li>Необходим переход к DL-подходам для устойчивости</li>
     </ul>
     <p><strong>Технологии:</strong> Python, OpenCV, Aravis, Pandas, NumPy</p>
-    <img class="resized" src="img_1.jpg" alt="График и изображения ядра">
-    <p><strong>Выводы и перспективы:</strong> Необходима дальнейшая разработка с использованием машинного обучения и автоматической калибровки для повышения устойчивости и точности метода.</p>
+    <img class="resized" src="img_1.jpg" alt="Подсолнечник анализ">
   </div>
 
   <div class="project">
     <h3>Система подсчета трафика</h3>
-    <p>
-      "Система подсчета автомобильного трафика по полосам движения в реальном времени с трекингом и классификацией на базе YOLO и Raspberry Pi."
-    </p>
+    <p>YOLO + Raspberry Pi система для классификации и подсчета транспорта по полосам движения.</p>
     <ul>
-      <li>Трекинг и классификация транспорта в реальном времени.</li>
-      <li>Запись результатов в базу данных.</li>
-      <li>Низкие системные требования, работа на Raspberry Pi.</li>
+      <li>Трекинг, классификация и запись в БД</li>
+      <li>Оптимизировано под низкие ресурсы</li>
     </ul>
-    <p><strong>Технологии:</strong> YOLO, Raspberry Pi, OpenCV, Python</p>
+    <p><strong>Технологии:</strong> YOLO, OpenCV, Python, Raspberry Pi</p>
     <a href="https://youtu.be/ihf8mkgydJA">
-      <img class="video-thumb" src="https://img.youtube.com/vi/ihf8mkgydJA/0.jpg" alt="Видео 1">
+      <img class="video-thumb" src="https://img.youtube.com/vi/ihf8mkgydJA/0.jpg" alt="Traffic Video 1">
     </a>
     <a href="https://youtu.be/_UefbwsBRs0">
-      <img class="video-thumb" src="https://img.youtube.com/vi/_UefbwsBRs0/0.jpg" alt="Видео 2">
+      <img class="video-thumb" src="https://img.youtube.com/vi/_UefbwsBRs0/0.jpg" alt="Traffic Video 2">
     </a>
   </div>
 
   <div class="project">
-    <h3>Сервис OCR + LLM для изображений книг</h3>
-    <p>
-      Извлечение ключевой информации из изображений книг. Обрабатывает около 3000 запросов в день.
-    </p>
+    <h3>OCR + LLM для изображений книг</h3>
+    <p>Извлечение ключевой информации из изображений страниц, ~3000 запросов в день.</p>
     <ul>
-      <li>Использование LLM для анализа текста.</li>
-      <li>Высокая производительность: обработка тысяч запросов ежедневно.</li>
-      <li>REST API для интеграции с другими системами.</li>
+      <li>LLM-анализ текста</li>
+      <li>REST API интеграция</li>
     </ul>
     <p><strong>Технологии:</strong> OCR, LLM, FastAPI, Python</p>
     <a href="https://youtu.be/1zbjwgsuA-Y">
-      <img class="video-thumb" src="https://img.youtube.com/vi/1zbjwgsuA-Y/0.jpg" alt="OCR LLM видео">
+      <img class="video-thumb" src="https://img.youtube.com/vi/1zbjwgsuA-Y/0.jpg" alt="OCR Video">
     </a>
   </div>
 
   <div class="project">
     <h3>Lipsync и реставрация лиц с GAN</h3>
-    <p>
-      Реставрация лиц и улучшение качества видео с помощью GAN в рамках рабочего проекта в компании. Работа с моделями lipsync для синхронизации мимики с аудио.
-    </p>
+    <p>Синхронизация мимики и улучшение качества видео на базе Wav2Lip, GAN, GFPGAN и других моделей.</p>
     <ul>
-      <li>Детекция, идентификация лиц</li>
-      <li>Устранение артефактов в мимике</li>
-      <li>Синхронизация мимики с аудио</li>
-      <li>Использование предобученных моделей и кастомизация</li>
+      <li>Детекция и идентификация лиц</li>
+      <li>Устранение артефактов</li>
+      <li>Синхронизация речи и видео</li>
     </ul>
-    <p><strong>Технологии:</strong> Python, Wav2Lip, YOLOv5, tortoise-TTS, GFPGAN, GAN, VideoReTalking, Roop</p>
+    <p><strong>Технологии:</strong> Python, Wav2Lip, YOLOv5, Tortoise-TTS, GFPGAN, GAN, VideoReTalking, Roop</p>
     <a href="https://youtu.be/CmFFlm8BUKo">
-      <img class="video-thumb" src="https://img.youtube.com/vi/CmFFlm8BUKo/0.jpg" alt="GAN видео">
+      <img class="video-thumb" src="https://img.youtube.com/vi/CmFFlm8BUKo/0.jpg" alt="GAN Video">
     </a>
   </div>
 
   <h2>Контакты</h2>
   <p>
     <strong>Email:</strong> <a href="mailto:alnibl88@gmail.com">alnibl88@gmail.com</a><br>
-    <strong>GitHub:</strong> <a href="https://github.com/alnibl">Посетить мой профиль</a><br>
+    <strong>GitHub:</strong> <a href="https://github.com/alnibl">https://github.com/alnibl</a><br>
     <strong>Telegram:</strong> @Alnibl<br>
-    <strong>Сайт портфолио:</strong> <a href="https://alnibl.github.io/Portfolio/">https://alnibl.github.io/Portfolio/</a>
+    <strong>Портфолио:</strong> <a href="https://alnibl.github.io/Portfolio/">https://alnibl.github.io/Portfolio/</a>
   </p>
 </body>
 </html>

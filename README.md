@@ -18,7 +18,7 @@
   * Развёртывание FastAPI-сервера с Docker.
   * Интеграция EasyOCR и Tesseract.
   * Настройка локальных LLM (Qwen3, DeepSeek) через Ollama.
-  * Разработка скрипта `extract_meta3.py` для анализа.
+  * Разработка скриптов для анализа.
   * Реализация API для загрузки и анализа документов.
   * Тестирование, настройка таймаутов и ограничений.
 
@@ -27,11 +27,11 @@
 * **Примеры API**:
 
 ```bash
-curl -X POST http://31.173.93.121/api/upload \
+curl -X POST http://x.x.x.x/api/upload \
  -F "files=@/путь/Акт.pdf"
  -F "files=@/путь/Договор.pdf"
 
-GET http://31.173.93.121/api/result/{pdf_id}
+GET http://x.x.x.x/api/result/{pdf_id}
 ```
 
 * **Результаты**:

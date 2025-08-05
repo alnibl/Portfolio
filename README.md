@@ -27,11 +27,16 @@
 * **Примеры API**:
 
 ```bash
+# Массовая загрузка документов:
 curl -X POST http://x.x.x.x/api/upload \
  -F "files=@/путь/Акт.pdf"
  -F "files=@/путь/Договор.pdf"
 
+# Получение результата:
 GET http://x.x.x.x/api/result/{pdf_id}
+
+# Скачивание JSON:
+GET http://x.x.x.x/download/{pdf_id}.json
 ```
 
 * **Результаты**:

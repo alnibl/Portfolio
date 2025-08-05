@@ -5,6 +5,7 @@
 * Добро пожаловать в моё портфолио! Здесь вы можете найти информацию о моих проектах, демонстрации и описания.
 * [Посетить сайт портфолио](https://alnibl.github.io/Portfolio/)
 * [Смотреть видеовизитку](https://youtube.com/shorts/EuhiwnNi8RY)
+* [GitHub](https://github.com/alnibl)
 
 ## Мои проекты
 

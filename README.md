@@ -47,7 +47,7 @@ GET http://x.x.x.x/download/{pdf_id}.json
   * Проект развёрнут и доступен по тестовой ссылке.
 
 <p align="left">
-  <img src="img_2.jpg" width="500">
+  <img src="img_2.png" width="500">
 </p>
 
 
